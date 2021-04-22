@@ -1,6 +1,6 @@
-# LyricsFinder
+# lyrics-finder
 ## General info
-Simple python aplication that downloads and displays lyrics of currently played song.
+Simple python aplication displaying lyrics of currently played song.
 
 ## Requiremets
 Project requires:
