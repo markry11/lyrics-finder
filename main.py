@@ -1,4 +1,4 @@
-from pywindowsmediacontrol.windows_media_control import MediaManager
+from windows_media_control.media_manager import MediaManager
 from gui import Gui
 from lyrics_finder import LyricsFinder
 gui = Gui(15, 70)
