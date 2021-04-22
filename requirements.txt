@@ -1,0 +1,4 @@
+Flask==0.10.1
+lyricsgenius==3.0.0
+lyrics-extractor==3.0.1
+git+git://github.com/markry11/pyWindowsMediaControl@0.0.1#egg=pywindowsmediacontrol
