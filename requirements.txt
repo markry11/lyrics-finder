@@ -1,2 +1,2 @@
-lyrics-extractor==3.0.1
 git+git://github.com/markry11/windows-media-control@main#egg=windows_media_control
+git+git://github.com/markry11/lyrics-extractor@main#egg=lyrics_extractor
