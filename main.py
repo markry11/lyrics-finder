@@ -12,7 +12,7 @@ def set_timer(*args):
     global timer
     if timer and timer.is_alive():
         timer.cancel()
-    timer = Timer(3.0, on_song_changed, args=args)
+    timer = Timer(1.0, on_song_changed, args=args)
     timer.start()
     gui.set_text('searching...')
 

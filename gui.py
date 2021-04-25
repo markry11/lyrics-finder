@@ -1,9 +1,10 @@
 import tkinter as tk
 from readonly_text import ReadonlyText
 
+_font_size = 12
 _bg_color='#ffff64'
 _fg_color='#000000'
-_font = ("Segoe UI", 12)
+_font = ("Segoe UI", _font_size)
 
 class _Args:
     title = ''
@@ -21,7 +22,9 @@ class Gui:
             bg=_bg_color, 
             fg=_fg_color, 
             state=tk.DISABLED,
-            font=_font)
+            font=_font,
+            padx = _font_size,
+            pady = _font_size)
         root.resizable(False, False)
         root.title(title)
         scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
