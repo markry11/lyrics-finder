@@ -3,7 +3,7 @@ from gui import Gui
 from lyrics_finder import LyricsFinder
 from threading import Timer
 
-gui = Gui(15, 70)
+gui = Gui(15, 70, 'Lyrics Finder')
 lf = LyricsFinder()
 timer = None
 suspended = False

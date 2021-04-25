@@ -8,8 +8,9 @@ _font = ("Segoe UI", 12)
 class _Args:
     title = ''
     artist = ''
+
 class Gui:
-    def __init__(self, height, width):
+    def __init__(self, height, width, title):
         root = tk.Tk()
         root.wm_attributes("-topmost", 1)
         scrollbar = tk.Scrollbar(root)
@@ -21,10 +22,24 @@ class Gui:
             fg=_fg_color, 
             state=tk.DISABLED,
             font=_font)
+        root.resizable(False, False)
+        root.title(title)
         scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
         self.text.pack(side=tk.LEFT, fill=tk.Y)
         scrollbar.config(command=self.text.yview)
         self.text.config(yscrollcommand=scrollbar.set)
+
+        root.update_idletasks()
+        pad_x = 50
+        pad_y = 100
+        w = root.winfo_width()
+        h = root.winfo_height()
+        screen_width = root.winfo_screenwidth()
+        screen_height = root.winfo_screenheight()
+        x = screen_width - w - pad_x
+        y = screen_height - h - pad_y
+        root.geometry('%dx%d+%d+%d' % (w, h, x, y))
+
         self.root = root
 
     def set_text(self, text):
